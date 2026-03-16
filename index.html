@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SaaS Analytics Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<h2 class="logo">SATIC</h2>
+
+<ul class="menu">
+
+<li class="active">Dashboard</li>
+<li>Analytics</li>
+<li>Users</li>
+<li>Reports</li>
+<li>Settings</li>
+
+</ul>
+
+</aside>
+
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+<input type="text" placeholder="Search...">
+
+<div class="user">
+
+<img src="https://i.pravatar.cc/40">
+
+</div>
+
+</header>
+
+
+
+<!-- CARDS -->
+
+<section class="cards">
+
+<div class="card">
+
+<h3>Revenue</h3>
+
+<p>$24,300</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Users</h3>
+
+<p>1,240</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Orders</h3>
+
+<p>560</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>Growth</h3>
+
+<p>+18%</p>
+
+</div>
+
+</section>
+
+
+
+<!-- CHART -->
+
+<section class="chart-container">
+
+<h3>Revenue Overview</h3>
+
+<canvas id="chart"></canvas>
+
+</section>
+
+
+
+<!-- TABLE -->
+
+<section class="table-container">
+
+<h3>Recent Users</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Alex</td>
+<td>alex@mail.com</td>
+<td class="active">Active</td>
+
+</tr>
+
+<tr>
+
+<td>Sara</td>
+<td>sara@mail.com</td>
+<td class="inactive">Inactive</td>
+
+</tr>
+
+<tr>
+
+<td>John</td>
+<td>john@mail.com</td>
+<td class="active">Active</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+
+</div>
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
