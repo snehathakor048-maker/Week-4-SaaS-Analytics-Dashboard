@@ -10,7 +10,7 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -37,14 +37,11 @@
 </aside>
 
 
+<!-- MAIN -->
 
-<!-- MAIN CONTENT -->
+<main class="main">
 
-<div class="main">
-
-<!-- TOPBAR -->
-
-<header class="topbar">
+<div class="topbar">
 
 <input type="text" placeholder="Search...">
 
@@ -54,110 +51,57 @@
 
 </div>
 
-</header>
+</div>
 
 
-
-<!-- CARDS -->
+<!-- STATS -->
 
 <section class="cards">
 
 <div class="card">
-
 <h3>Revenue</h3>
-
 <p>$24,300</p>
-
 </div>
 
-
 <div class="card">
-
 <h3>Users</h3>
-
 <p>1,240</p>
-
 </div>
 
-
 <div class="card">
-
 <h3>Orders</h3>
-
 <p>560</p>
-
 </div>
-
 
 <div class="card">
-
 <h3>Growth</h3>
-
 <p>+18%</p>
-
 </div>
 
 </section>
-
-
-
-<!-- CHART -->
-
-<section class="chart-container">
-
-<h3>Revenue Overview</h3>
-
-<canvas id="chart"></canvas>
-
-</section>
-
 
 
 <!-- TABLE -->
 
 <section class="table-container">
 
-<h3>Recent Users</h3>
+<h3>Users Overview</h3>
 
 <table>
 
 <thead>
 
 <tr>
-
 <th>Name</th>
 <th>Email</th>
+<th>Revenue</th>
 <th>Status</th>
-
+<th>Last Login</th>
 </tr>
 
 </thead>
 
-<tbody>
-
-<tr>
-
-<td>Alex</td>
-<td>alex@mail.com</td>
-<td class="active">Active</td>
-
-</tr>
-
-<tr>
-
-<td>Sara</td>
-<td>sara@mail.com</td>
-<td class="inactive">Inactive</td>
-
-</tr>
-
-<tr>
-
-<td>John</td>
-<td>john@mail.com</td>
-<td class="active">Active</td>
-
-</tr>
+<tbody id="tableData">
 
 </tbody>
 
@@ -165,17 +109,12 @@
 
 </section>
 
+</main>
 
 </div>
 
-</div>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
 
 </body>
-
 </html>
