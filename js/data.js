@@ -2,8 +2,8 @@ export const mockDashboardData = [
 
 {
 id:1,
-name:"Aarav Sharma",
-email:"aarav@gmail.com",
+name:"Aayushi Sharma",
+email:"aayushi@gmail.com",
 revenue:3200,
 status:"Active",
 lastLogin:"2026-03-15"
@@ -20,8 +20,8 @@ lastLogin:"2026-03-12"
 
 {
 id:3,
-name:"Rahul Mehta",
-email:"rahul@gmail.com",
+name:"Juli Mehta",
+email:"juli@gmail.com",
 revenue:4800,
 status:"Active",
 lastLogin:"2026-03-16"
@@ -38,8 +38,8 @@ lastLogin:"2026-02-28"
 
 {
 id:5,
-name:"Vikram Singh",
-email:"vikram@gmail.com",
+name:"Meena Singh",
+email:"meena@gmail.com",
 revenue:2700,
 status:"Active",
 lastLogin:"2026-03-10"
@@ -56,8 +56,8 @@ lastLogin:"2026-03-11"
 
 {
 id:7,
-name:"Rohan Shah",
-email:"rohan@gmail.com",
+name:"Rosani Shah",
+email:"rosani@gmail.com",
 revenue:4100,
 status:"Active",
 lastLogin:"2026-03-14"
@@ -65,8 +65,8 @@ lastLogin:"2026-03-14"
 
 {
 id:8,
-name:"Karan Verma",
-email:"karan@gmail.com",
+name:"Kirti Verma",
+email:"kirti@gmail.com",
 revenue:1500,
 status:"Churned",
 lastLogin:"2026-02-20"
@@ -74,7 +74,7 @@ lastLogin:"2026-02-20"
 
 {
 id:9,
-name:"Sneha Iyer",
+name:"Sneha Thkor",
 email:"sneha@gmail.com",
 revenue:2900,
 status:"Active",
@@ -83,8 +83,8 @@ lastLogin:"2026-03-17"
 
 {
 id:10,
-name:"Ankit Joshi",
-email:"ankit@gmail.com",
+name:"Ankita Joshi",
+email:"ankita@gmail.com",
 revenue:3300,
 status:"Active",
 lastLogin:"2026-03-13"
