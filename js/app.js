@@ -29,16 +29,12 @@ table.appendChild(row)
 renderTable()
 
 
-
-/* ======================
-   REVENUE CHART
-====================== */
+/* CHART */
 
 const ctx=document.getElementById("revenueChart")
 
-const revenueData = mockDashboardData.map(user=>user.revenue)
-
 const labels = mockDashboardData.map(user=>user.name)
+const revenueData = mockDashboardData.map(user=>user.revenue)
 
 new Chart(ctx,{
 
@@ -69,27 +65,20 @@ tension:0.4
 options:{
 
 responsive:true,
+maintainAspectRatio:false,
 
 plugins:{
-
-legend:{
-display:false
-}
-
+legend:{display:false}
 },
 
 scales:{
 
 x:{
-ticks:{
-color:"#94a3b8"
-}
+ticks:{color:"#94a3b8"}
 },
 
 y:{
-ticks:{
-color:"#94a3b8"
-}
+ticks:{color:"#94a3b8"}
 }
 
 }
