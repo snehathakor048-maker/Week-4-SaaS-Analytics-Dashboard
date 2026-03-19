@@ -88,10 +88,6 @@ margin-bottom:40px;
 height:350px;
 }
 
-.chart-container h3{
-margin-bottom:15px;
-}
-
 canvas{
 width:100% !important;
 height:100% !important;
@@ -103,11 +99,13 @@ height:100% !important;
 background:#1e293b;
 padding:20px;
 border-radius:10px;
+overflow-x:auto;   /* ⭐ IMPORTANT DAY 4 */
 }
 
 table{
 width:100%;
 border-collapse:collapse;
+min-width:600px;  /* mobile scroll */
 }
 
 th,td{
@@ -123,9 +121,30 @@ tr{
 border-bottom:1px solid #334155;
 }
 
-.active{color:#22c55e;}
-.pending{color:#f59e0b;}
-.churned{color:#ef4444;}
+/* STATUS PILLS */
+
+.status{
+padding:5px 10px;
+border-radius:20px;
+font-size:12px;
+font-weight:600;
+display:inline-block;
+}
+
+.active{
+background:rgba(34,197,94,0.2);
+color:#22c55e;
+}
+
+.pending{
+background:rgba(245,158,11,0.2);
+color:#f59e0b;
+}
+
+.churned{
+background:rgba(239,68,68,0.2);
+color:#ef4444;
+}
 
 /* MOBILE */
 
