@@ -185,3 +185,47 @@ height:280px;
 }
 
 }
+
+
+/* FILTER + BUTTON */
+
+#statusFilter{
+padding:8px;
+border-radius:6px;
+background:#1e293b;
+color:white;
+border:none;
+margin-left:10px;
+}
+
+#themeToggle{
+margin-left:10px;
+padding:8px 12px;
+border:none;
+border-radius:6px;
+background:#3b82f6;
+color:white;
+cursor:pointer;
+}
+
+/* LIGHT MODE */
+
+[data-theme="light"]{
+background:#f1f5f9;
+color:#0f172a;
+}
+
+[data-theme="light"] .card,
+[data-theme="light"] .chart-container,
+[data-theme="light"] .table-container{
+background:white;
+color:#0f172a;
+}
+
+[data-theme="light"] .sidebar{
+background:#e2e8f0;
+}
+
+[data-theme="light"] .menu li{
+color:#334155;
+}
