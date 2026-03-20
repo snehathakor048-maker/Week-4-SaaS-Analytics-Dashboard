@@ -70,3 +70,56 @@ y:{ticks:{color:"#94a3b8"}}
 }
 
 })
+
+
+
+
+/* 
+   FILTER LOGIC
+ */
+
+const filter = document.getElementById("statusFilter")
+
+filter.addEventListener("change", () => {
+
+const value = filter.value
+
+let filteredData = mockDashboardData
+
+if(value !== "all"){
+filteredData = mockDashboardData.filter(
+user => user.status.toLowerCase() === value
+)
+}
+
+renderFilteredTable(filteredData)
+
+})
+
+function renderFilteredTable(data){
+
+table.innerHTML=""
+
+data.forEach(user=>{
+
+const row=document.createElement("tr")
+
+row.innerHTML=`
+
+<td>${user.name}</td>
+<td>${user.email}</td>
+<td>$${user.revenue.toLocaleString()}</td>
+<td>
+<span class="status ${user.status.toLowerCase()}">
+${user.status}
+</span>
+</td>
+<td>${user.lastLogin}</td>
+
+`
+
+table.appendChild(row)
+
+})
+
+}
