@@ -1,35 +1,27 @@
-const ctx = document.getElementById('chart');
+/* 
+   DARK MODE
+*/
 
-new Chart(ctx, {
+const toggle = document.getElementById("themeToggle")
 
-type: 'line',
-
-data: {
-
-labels: ['Jan','Feb','Mar','Apr','May','Jun'],
-
-datasets: [{
-
-label: 'Revenue',
-
-data: [5000,8000,6000,9000,11000,15000],
-
-borderColor: '#3b82f6',
-
-tension:0.4
-
-}]
-
-},
-
-options:{
-
-plugins:{
-legend:{
-display:false
-}
+// load saved theme
+const savedTheme = localStorage.getItem("theme")
+if(savedTheme){
+document.documentElement.setAttribute("data-theme", savedTheme)
 }
 
+toggle.addEventListener("click", () => {
+
+const current = document.documentElement.getAttribute("data-theme")
+
+if(current === "light"){
+document.documentElement.setAttribute("data-theme","dark")
+localStorage.setItem("theme","dark")
+toggle.innerText = "🌙"
+}else{
+document.documentElement.setAttribute("data-theme","light")
+localStorage.setItem("theme","light")
+toggle.innerText = "☀️"
 }
 
-});
+})
