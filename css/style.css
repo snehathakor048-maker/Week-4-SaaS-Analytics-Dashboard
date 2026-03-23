@@ -268,3 +268,64 @@ align-items:flex-start;
 }
 
 }
+
+
+/* 
+   DAY 6 + DAY 7 IMPROVEMENTS
+ */
+
+/* smoother UI */
+.card,
+.chart-container,
+.table-container{
+transition: all 0.3s ease;
+}
+
+/* better button hover */
+#themeToggle:hover{
+opacity:0.9;
+transform:scale(1.05);
+}
+
+/* better input focus */
+.topbar input:focus{
+outline:none;
+box-shadow:0 0 0 2px #3b82f6;
+}
+
+/* table scroll mobile smooth */
+.table-container{
+-webkit-overflow-scrolling: touch;
+}
+
+/* mobile spacing improve */
+@media(max-width:768px){
+
+#statusFilter{
+margin-left:0;
+margin-top:10px;
+width:100%;
+}
+
+}
+
+/* better chart spacing mobile */
+@media(max-width:480px){
+
+.chart-container{
+padding:15px;
+height:260px;
+}
+
+}
+
+/* LIGHT MODE EXTRA FIX */
+[data-theme="light"] .topbar input{
+background:#e2e8f0;
+color:#0f172a;
+}
+
+[data-theme="light"] #statusFilter{
+background:#e2e8f0;
+color:#0f172a;
+}
