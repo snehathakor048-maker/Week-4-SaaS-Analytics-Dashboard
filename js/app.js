@@ -61,6 +61,12 @@ function updateChart(data){
 const labels = data.map(u=>u.name)
 const revenue = data.map(u=>u.revenue)
 
+// ✅ detect theme
+const isLight = document.documentElement.getAttribute("data-theme") === "light"
+
+const textColor = isLight ? "#0f172a" : "#94a3b8"
+const gridColor = isLight ? "#e2e8f0" : "#1e293b"
+
 if(chart){
 chart.destroy()
 }
@@ -82,8 +88,14 @@ responsive:true,
 maintainAspectRatio:false,
 plugins:{legend:{display:false}},
 scales:{
-x:{ticks:{color:"#94a3b8"}},
-y:{ticks:{color:"#94a3b8"}}
+x:{
+ticks:{color:textColor},
+grid:{color:gridColor}
+},
+y:{
+ticks:{color:textColor},
+grid:{color:gridColor}
+}
 }
 }
 })
